@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D41848E31E8A5DFF00DD6020 /* BinOp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D41848E11E8A5DFF00DD6020 /* BinOp.cpp */; };
 		D47897C51E87F73C00071122 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D47897C41E87F73C00071122 /* main.cpp */; };
+		D47897CD1E87F75B00071122 /* lexer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D47897CB1E87F75B00071122 /* lexer.cpp */; };
+		D47897D01E88FE0600071122 /* AST.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D47897CE1E88FE0600071122 /* AST.cpp */; };
+		D47897D31E89542200071122 /* parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D47897D11E89542200071122 /* parser.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D41848E11E8A5DFF00DD6020 /* BinOp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinOp.cpp; sourceTree = "<group>"; };
+		D41848E21E8A5DFF00DD6020 /* BinOp.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BinOp.hpp; sourceTree = "<group>"; };
 		D47897C11E87F73C00071122 /* Kaleidoscrope */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Kaleidoscrope; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47897C41E87F73C00071122 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		D47897CB1E87F75B00071122 /* lexer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lexer.cpp; sourceTree = "<group>"; };
+		D47897CC1E87F75B00071122 /* lexer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lexer.hpp; sourceTree = "<group>"; };
+		D47897CE1E88FE0600071122 /* AST.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = AST.cpp; sourceTree = "<group>"; };
+		D47897CF1E88FE0600071122 /* AST.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = AST.hpp; sourceTree = "<group>"; };
+		D47897D11E89542200071122 /* parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parser.cpp; sourceTree = "<group>"; };
+		D47897D21E89542200071122 /* parser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = parser.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,14 @@
 			isa = PBXGroup;
 			children = (
 				D47897C41E87F73C00071122 /* main.cpp */,
+				D47897CC1E87F75B00071122 /* lexer.hpp */,
+				D47897CB1E87F75B00071122 /* lexer.cpp */,
+				D47897CF1E88FE0600071122 /* AST.hpp */,
+				D47897CE1E88FE0600071122 /* AST.cpp */,
+				D41848E21E8A5DFF00DD6020 /* BinOp.hpp */,
+				D41848E11E8A5DFF00DD6020 /* BinOp.cpp */,
+				D47897D21E89542200071122 /* parser.hpp */,
+				D47897D11E89542200071122 /* parser.cpp */,
 			);
 			path = Kaleidoscrope;
 			sourceTree = "<group>";
@@ -120,6 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D41848E31E8A5DFF00DD6020 /* BinOp.cpp in Sources */,
+				D47897D31E89542200071122 /* parser.cpp in Sources */,
+				D47897D01E88FE0600071122 /* AST.cpp in Sources */,
+				D47897CD1E87F75B00071122 /* lexer.cpp in Sources */,
 				D47897C51E87F73C00071122 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +241,7 @@
 		D47897C91E87F73C00071122 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				DEVELOPMENT_TEAM = DHNJ8N28ZZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -225,6 +250,7 @@
 		D47897CA1E87F73C00071122 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				DEVELOPMENT_TEAM = DHNJ8N28ZZ;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -249,6 +275,7 @@
 				D47897CA1E87F73C00071122 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

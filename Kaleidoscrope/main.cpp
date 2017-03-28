@@ -7,9 +7,15 @@
 //
 
 #include <iostream>
+#include "BinOp.hpp"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+    // Install standard binary operators.
+    // 1 is lowest precedence.
+  BinopPrecedence['<'] = 10;
+  BinopPrecedence['+'] = 20;
+  BinopPrecedence['-'] = 20;
+  BinopPrecedence['*'] = 40; // highest.
+  
+  return 0;
 }
